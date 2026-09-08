@@ -1,1 +1,12 @@
+#CPU 
+1. it's the called the brain of the computer sys, containing cores and treads.
+2. cores are (like cells in a brain) . each are assigned an instruction to be preformed .
+{imp: core speed > number of cores}
+3. earlier cpu had 1 core which performed 1 task. it juggled so fast giving an illusion of multi-tasking
+4. cpu threads are virtual extension of physical core.[like adding 2 more hands to a person]
+5.performance doesn't double just coz we have more threads. threads are good in parallel execution.
+
+#RAM 
+1. they are the primary storage unit. the stored data is erased when the sys is off.
+2. however they help in fast access of info whenever the cpu needs. large amt of data can't be stored.
 
