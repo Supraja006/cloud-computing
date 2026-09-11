@@ -10,3 +10,13 @@
 1. they are the primary storage unit. the stored data is erased when the sys is off.
 2. however they help in fast access of info whenever the cpu needs. large amt of data can't be stored.
 
+#SSD/HDD
+1.they are used for storing large amount of data , for a long time. memory is non-volatile.
+2.has removable and fixed auxilary storage.
+
+#MOTHERBOARD
+1. keeps all the components together and provides connection to each other.
+2. has :
+* cpu * RAM * SSD/HDD * GPU [colouring pixels] *PSU[power supply unit : coverts the power from 
+the plug ponit to the power needed by pc] * cooling fan * case box 
+
