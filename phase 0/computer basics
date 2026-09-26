@@ -20,3 +20,18 @@
 * cpu * RAM * SSD/HDD * GPU [colouring pixels] *PSU[power supply unit : coverts the power from 
 the plug ponit to the power needed by pc] * cooling fan * case box 
 
+#OS
+1. provides a basic application program that acts has an intermediate b/w users & computers.
+2. Kernals > they are of 2 types . user mode and kernal mode.
+3. User mode : limited access to sys resources.
+4. kernal mode : full access to the sys resources.
+5. Mode bit : it's a binary bit , tells if the sys is in user mode(mode bit 1) or kernal mode(mode bit 0).
+6. Malfunctioning in kernal mode can lead to sys crashes or security valnerabilities . transaction b/w these two is called context switch.
+7. SYS CALLS: user program requestd access , therefore it's switch's from user mode to kernal mode.
+8. INTERUPTS: hardware & software interupt trigger the kernal to execute the task , later returning to kernal mode .
+9. EXCEPTIONS: if error exception occurs it turns back to kernal mode.
+
+->VIRTUAL MACHINE 
+1. abstract the hardware of a single computer into several different execution environment ( give an illusion that each execu
+environ is running it's o privae computer).
+2. a virtual machine has 2 modes (kernal & user) . VM it-self runs in aphysiacl user mode.
