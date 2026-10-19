@@ -34,4 +34,73 @@ the plug ponit to the power needed by pc] * cooling fan * case box
 ->VIRTUAL MACHINE 
 1. abstract the hardware of a single computer into several different execution environment ( give an illusion that each execu
 environ is running it's o privae computer).
-2. a virtual machine has 2 modes (kernal & user) . VM it-self runs in aphysiacl user mode.
+2. a virtual machine has 2 modes (kernal & user) . VM it-self runs in a physiacl user mode.
+
+->PROCESS STATES
+1.New: begin created
+2.Running: instructions begin execution
+3.Waiting: waiting for some Event to occur
+4. Ready: process in waiting to be assigned to a processor
+5. Terminated: process has finished execution
+
+* Process ID: unique num to identify a process state
+* Program Counter: address of the next line that has to be executed for a particular process
+* CPU Register: Register used by the process
+* CPU Scheduling: determines the priority of the algorithm.
+* Memory Management: represent's the memory handled by the process
+* Accounting Information: keeps a record of all the information resources used by the process
+
+->PROCESS SCHEDULING
+1. obj of multirogramming is to have some process running at all times , to maximize CPU utilization.
+2.obj of time sharing is to switch CPU among processes so that users can intract with each program while it's running (this happens fast);
+
+=>Note:
+if there are more processes , the rst will have to wait until the cpu is free
+
+->THREADS 
+1. a thead is a basic unit of CPU utilization.
+2. shares the other thread of the same process its code section, data section, other OS resources.
+
+->MULTITHREADING BENIFITS
+1. helps the program to continue runnig even if one part is blocked.
+2. resource sharing of the process
+3. economical benifits.
+
+->TYPES OF THREADS 
+1. user thread - managed without kernal support.
+2. kernal threads - managed by OS.
+
+commons ways of establishing a relation
+1. MANY-TO-ONE MODEL
+* many user have one kernal
+* only one thread can access the kernal at a time
+2. ONE-TO-ONE-MODEL
+* mutli-thread can turn parallel on multi-processors
+* user=thread must have a kernal-thread
+3.MANY-TO-MANY=MODEL
+* when a thread performs a blocking system call,the kernal can schedul another thread for execution
+
+CPU SCHEDULING
+cpu scheduling is the basis of multiprogrammed OS
+* swiching of CPU b/w processes, the OS can make the computer more prductive .
+* CPU scheduling is needed so that the CPU doesn't sit idel.
+
+MEMORY MANAGEMENT
+* goal->efficient utilization of memory
+-> primary memory is connected toCPU , but secondary mem is not since it's large  therefore the data is carried to the RAM and then 
+moved to the CPU
+-> increase the RAM size ,the num of process increase, therefore CPU utilization increases
+
+MEMORY MANAGEMENT TECHNIQUES
+1. Contiguous 
+2. Non-Contiguous
+  i. fixed partition
+  ii. variable partition
+
+* fixed partition : when the process is of less data or memory , then the OS will have some memory space left which won'r be used,
+* memory space wasted is called internal fragmentation
+
+
+
+
+
